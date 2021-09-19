@@ -5,9 +5,18 @@
 .card{
     margin: 0 2% !important;
 }
+.color{
+    background: rgb(108, 172, 87);
+}
+.color1{
+    background: rgb(78, 90, 155);
+}
+.color2{
+    background: rgb(139, 63, 88);
+}
 
 .infected{
-    border: 5px solid rgba(0,0,255,0.8);
+    border: 5px solid rgba(10, 73, 146, 0.8);
 }
 
 .recovered{

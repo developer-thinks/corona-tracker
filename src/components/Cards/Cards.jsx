@@ -13,7 +13,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate}}) => {
         <div className={styles.container}>
            <Grid container spacing={3} justify="center">
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card , styles.infected)} >
-                    <CardContent>
+                    <CardContent className={styles.color1} >
                         <Typography color="textSecondary" gutterBottom >Infected</Typography>
                         <Typography variant="h5">
                             <CountUp 
@@ -29,7 +29,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate}}) => {
                 </Grid>
 
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card , styles.recovered)} >
-                    <CardContent>
+                    <CardContent className={styles.color} >
                         <Typography color="textSecondary" gutterBottom >Recovered</Typography>
                        <Typography variant="h5">
                             <CountUp 
@@ -45,7 +45,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate}}) => {
                 </Grid>
 
                  <Grid item component={Card} xs={12} md={3} className={cx(styles.card , styles.deaths)} >
-                    <CardContent>
+                    <CardContent className={styles.color2} >
                         <Typography color="textSecondary" gutterBottom >Deaths</Typography>
                         <Typography variant="h5">
                             <CountUp 
